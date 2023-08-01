@@ -1,0 +1,52 @@
+body, html {
+  height: 75%;
+  margin: 50px;
+}
+
+.container {
+  display: flex;
+  height: 80%;
+}
+
+.left-pane, .right-pane {
+  flex: 1;
+  height: 75%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-pane {
+  background-color: #f0f0f0;
+}
+
+.right-pane {
+  background-color: #f0f0f0;
+}
+
+.input-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: bold;
+}
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button-container {
+  text-align: center;
+  padding: 1px;
+  
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>employee salary prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='emp.css')}}">
+  
+</head>
+<body>
+
+<center><h1>Employee attrition problem</h1></center>
+<form action="/" method="post">
+  <div class="container">
+    <div class="left-pane">
+      <div class="input-column">
+	<label for="input1">Job Type:</label>
+	<select name="job_type" id="job_type">
+    		<option value="CEO">CEO</option>
+    		<option value="CFO">CFO</option>
+    		<option value="CTO">CTO</option>
+    		<option value="JANITOR">JANITOR</option>
+			<option value="JUNIOR">JUNIOR</option>
+    		<option value="MANAGER">MANAGER</option>
+    		<option value="VICE_PRECIDENT">VICE_PRECIDENT</option>
+  	</select>
+      </div>
+      <div class="input-column">
+        <label for="input2">Degree:</label>
+        <select name="degree" id="degree">
+    		<option value="BACHELORS">BACHELORS</option>
+    		<option value="DOCTORAL">DOCTORAL</option>
+    		<option value="HIGHSCHOOL">HIGHSCHOOL</option>
+    		<option value="MASTERS">MASTERS</option>
+		<option value="NONE">NONE</option>
+  	</select>
+      </div>
+
+
+      <div class="input-column">
+        <label for="input3">Major:</label>
+        <select name="major" id="major">
+    		<option value="BIOLOGY">BIOLOGY</option>
+    		<option value="BUSINESS">BUSINESS</option>
+    		<option value="CHEMISTY">CHEMISTRY</option>
+    		<option value="COMPSCI">COMPSCI</option>
+		<option value="ENGINEERING">ENGINEERING</option>
+    		<option value="LITARATURE">LITARATURE</option>
+    		<option value="MATH">MATH</option>
+    		<option value="NONE">NONE</option>
+		<option value="PHYSICS">PHYSICS</option>
+  	</select>
+      </div>
+
+
+    </div>
+    <div class="right-pane">
+      <div class="input-column">
+        <label for="input4">Industry:</label>
+        <select name="industry" id="industry">
+		<option value="AUTO">AUTO</option>
+    		<option value="EDUCATION">EDUCATION</option>
+    		<option value="FINANCE">FINANCE</option>
+    		<option value="HEALTH">HEALTH</option>
+			<option value="OIL">OIL</option>
+    		<option value="SERVICE">SERVICE</option>
+    		<option value="WEB">WEB</option>
+  	</select>
+      </div>
+
+      <div class="input-column">
+        <label for="input5">Distance in Miles:</label>
+		<input type="number" id="distance" name = 'distance'>
+      </div>
+      <div class="input-column">
+        <label for="input6">Years of Experience:</label>
+		<input type="number" id="experience" name="experience" min="1" max="25">
+      </div>
+    </div>
+  </div>
+  <div class="submit-button-container">
+    <button type="submit" id="submit-button" style="height: 25px; width: 75px;">Submit</button>
+  </div>
+</form>
+<div><center>
+	<h3><p>Based on above details Employe salary is : <h2> ${{prediction}}K </h2></p></h3></center>>
+</div>
+</body>
+</html>
